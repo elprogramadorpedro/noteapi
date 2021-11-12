@@ -9,7 +9,7 @@ mongoose.connect('mongodb://localhost/javascriptNote', {
 .catch((err)=>console.log(err));
 */
 const mongoose= require ('mongoose');
-mongoose.Promise= global.Promise;
+mongoose.Promise= global.Promise; 
 
 require('dotenv').config();
 const MONGO_URL= process.env.MONGO_URL;
